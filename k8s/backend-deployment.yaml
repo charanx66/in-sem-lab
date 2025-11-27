@@ -16,6 +16,7 @@ spec:
       containers:
         - name: backend
           image: ghcr.io/charanx66/hospital-backend:latest
+          imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
           env:
